@@ -4,7 +4,7 @@
 
 // Part 1: Declare (5) Variables With Type
 
-let spacescraftName: string = 'Determination';
+let spacecraftName: string = 'Determination';
 let speedMph: number = 17500;
 let kilometersToMars: number = 225000000;
 let kilometersToTheMoon: number = 384400;
@@ -18,7 +18,7 @@ let daysToMars: number = hoursToMars / 24;
 
 // Code an output statement here (use a template literal):
 
-console.log(`${spacescraftName} would take ${daysToMars} to get to Mars`)
+console.log(`${spacecraftName} would take ${daysToMars} to get to Mars`)
 
 // Part 3: Create a Function ("getDaysToLocation")
 
@@ -33,13 +33,17 @@ return hours / 24;
 // the function and print the outputs for a Mars trip and a moon trip.
 
 
-console.log(`${spacescraftName} would take ${getDaysToLocation(kilometersToMars)} days to get to Mars`)
-console.log(`${spacescraftName} would take ${getDaysToLocation(kilometersToTheMoon)} days to get to the Moon`)
+console.log(`${spacecraftName} would take ${getDaysToLocation(kilometersToMars)} days to get to Mars`)
+console.log(`${spacecraftName} would take ${getDaysToLocation(kilometersToTheMoon)} days to get to the Moon`)
 
 // Part 4: Create a Spacecraft Class
 
 
+class Spacecraft{
+    spacecraftName: string;
+    milesPerKilometer: number = .621;
 
+}
 
 // Create an instance of the class here:
 
